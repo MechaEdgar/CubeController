@@ -35,9 +35,9 @@ public class Player : MonoBehaviour {
 			transform.RotateAround(transform.position, Vector3.up, -rotatingSpeed * Time.deltaTime);
 		}
 
-	// Up movement
+	// Foward movement
 		if(Input.GetKey("up")){
-			transform.position += Vector3.forward * speed * Time.deltaTime;
+			transform.position += transform.forward * speed * Time.deltaTime;
 		}
 
 	//UpMovement
